@@ -10,7 +10,6 @@ html{
  font-size: 62.5%;
 }
 
-
 /*-----------nav bar---------------*/
 .nav-bar{
   background:rgb(0, 93, 187);
@@ -508,4 +507,13 @@ nav .logo.space{
 .btn__add-card:hover{
   background: #bdbdbd38;
   cursor:pointer;
+}
+
+.card::-webkit-scrollbar{
+  width: .8rem;
+}
+
+.card::-webkit-scrollbar-thumb{
+  background-color: rgb(179, 179, 179);
+  border-radius: 10px;
 }
