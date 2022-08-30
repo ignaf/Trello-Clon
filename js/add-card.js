@@ -3,8 +3,9 @@ const cardContainer = document.getElementById("card-container");
 
 BtnAddCard.addEventListener("click",AddNewCard);
 
+
 function AddNewCard(){
-   
+
     const card = document.createElement("div");
     card.classList.add("card");
     
@@ -41,9 +42,20 @@ function AddNewCard(){
         const newItem = document.createElement("li");
         newItem.classList.add("drag");
         newItem.setAttribute("draggable","true");
-        newItem.setAttribute("contenteditable","true");
+        // newItem.setAttribute("contenteditable","true");
         newItem.innerHTML="Introduzca el título para ésta tarjeta"
+        newItem.addEventListener("dblclick", function(){
+            this.toggleAttribute("contenteditable")
+        })
+        newItem.addEventListener("keypress",function(e){
+            if(e.key==="Enter"){
+                e.preventDefault();
+                this.toggleAttribute("contenteditable")
+            }
+                       
+        })
         button.parentElement.querySelector(".list").appendChild(newItem);
+        
 
         newItem.addEventListener('dragstart',()=>{
             newItem.classList.add('dragging')
@@ -82,6 +94,7 @@ function AddNewCard(){
                  }
             },{offset: Number.NEGATIVE_INFINITY}).element
     }
+    
     }
 
     // botonborrar.onclick=function(){

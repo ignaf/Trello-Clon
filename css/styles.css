@@ -448,7 +448,7 @@ nav .logo.space{
 }
 
 .card{
-    border-radius: .5rem;
+    border-radius: .4rem;
     background: #fafafa;
     margin: 1rem;
     padding: .5rem;
@@ -467,6 +467,10 @@ nav .logo.space{
   color: #333;
   margin-top: 0.5rem;
     margin-left: 1rem;
+}
+
+.card__content{
+  min-height: 2rem;
 }
 
 .drag{
