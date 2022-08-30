@@ -4,12 +4,13 @@ const cardContainer = document.getElementById("card-container");
 BtnAddCard.addEventListener("click",AddNewCard);
 
 function AddNewCard(){
+   
     const card = document.createElement("div");
     card.classList.add("card");
     
     const cardHeader = document.createElement("div");
     cardHeader.classList.add("card__header");
-    cardHeader.innerHTML="<h3 contenteditable>Nueva Lista</h3><i class='bi bi-three-dots nav-secondary-icon'></i>";
+    cardHeader.innerHTML="<h3 contenteditable>Nueva Lista</h3><i class='bi bi-three-dots nav-secondary-icon collapsible-menu'></i>";
 
     const cardContent = document.createElement("div");
     cardContent.classList.add("card__content");
@@ -83,9 +84,9 @@ function AddNewCard(){
     }
     }
 
-    botonborrar.onclick=function(){
-        const lista = botonborrar.parentElement
+    // botonborrar.onclick=function(){
+    //     const lista = botonborrar.parentElement
 
-        lista.remove()
-    }
+    //     lista.remove()
+    // }
 }

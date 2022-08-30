@@ -322,17 +322,101 @@ nav .logo.space{
     margin: 1rem;
   }
 }
+/*-----------sidebar-------------*/
+.sidebar{
+  background: #5e83ff;
+  width: 20%;
+  height: 100vh;
+  position: absolute;
+  left: -250px;
+  transition: left .2s;
+  color:#fafafa;
+}
 
+.sidebar--expanded{
+  background:rgb(0, 93, 187);
+  border-right: solid 1px #8ea9ff;
+  left: 0;
+}
+
+.sidebar:hover{
+  background: #8ea9ff;
+}
+
+.sidebar--expanded:hover{
+  background:rgb(0, 93, 187);
+
+}
+
+.sidebar__workspace{
+  display: flex;
+  border-top: solid 1px #8ea9ff;
+  border-bottom: solid 1px #8ea9ff;
+  height: 8rem;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.sidebar__workspace div{
+  display: flex;
+}
+
+.sidebar__workspace span{
+  background: rgb(179,0,0);
+  background: linear-gradient(180deg, rgba(179,0,0,1) 0%, rgba(255,216,160,1) 100%);
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+  padding-top: .8rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.sidebar__workspace h2{
+  
+  margin:1rem;
+}
+
+.sidebar__workspace i{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+.sidebar__tableros{
+  margin-top: 1.5rem;
+}
+.sidebar__tableros h2{
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+.sidebar__tableros h3{
+  margin-left: 1rem;
+  margin-top: .5rem;
+} 
+.sidebar__tableros i{
+  font-size: 2rem;
+  margin-left: 1.5rem;
+}
+.sidebar__tableros div{
+  display: flex;
+  background: #5e83ff;
+}
 /*-----------cards---------------*/
+
 .card-container{
  width: 100%;
  height: 100vh;
  display: flex;
- flex-direction: row;
- justify-content: center;
- align-items:flex-start;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items:center;
  background:rgb(0, 128, 255);
  flex-wrap: wrap;
+}
+
+.listas-wraper{
+  display: flex;
+  flex-direction: row;
 }
 
 .listas{
@@ -343,7 +427,6 @@ nav .logo.space{
  flex-wrap: wrap;
 
 }
-
 .card{
     border-radius: .5rem;
     background: #fafafa;
@@ -353,7 +436,6 @@ nav .logo.space{
     width: 25rem;
     max-height: 50rem;
     overflow-y: scroll;
-
 }
 .card__header{
   display: flex;

@@ -26,7 +26,7 @@
         <div class="nav-items">
           <li>
             <a href="#">Espacios de trabajo <i class="bi bi-chevron-down"></i></a
-            ></i>
+            >
           </li>
           <li><a href="#">Reciente <i class="bi bi-chevron-down"></i></a></li>
           <li><a href="#">Marcado <i class="bi bi-chevron-down"></i></a></li>
@@ -58,40 +58,62 @@
       </nav>
     </header>
     <main>
-      <nav class="nav-bar--secondary">
-        <div class="nav-items--secondary">
-          <li>
-            <a class="btn--nav--secondary" href="#"><i class="bi bi-kanban nav-secondary-icon"></i>Tablero <i class="bi bi-chevron-down"></i></a
-            ></i>
-          </li>
-          <li><h2>Trello Clon</h2></li>
-          <li><a class="btn--nav--secondary" href="#"><i class="bi bi-star"></i></a></li>
-          <li><a class="btn--nav--secondary" href="#">Mox It</a></li>
-          <li>
-            <a class="btn--nav--secondary" href="#"><i class="bi bi-people nav-secondary-icon"></i>Visible para el Espacio de trabajo</a
-            >
-          </li>
+      <div class="main-container">
+        <div class="sidebar">
+          <div class="sidebar__workspace">
+            <div>
+              <span>M</span>
+              <h2>Mox It</h2>
+            </div>
+            <i class="bi bi-chevron-left"></i>
+          </div>
+          <div class="sidebar__tableros">
+            <h2>Sus tableros</h2>
+            <div>
+              <i class="bi bi-square-fill"></i>
+               <h3>Save Pets</h3>
+            </div>
+          </div>
+        </div>    
+        <div class="card-container" id="card-container">
+          <nav class="nav-bar--secondary">
+            <div class="nav-items--secondary">
+              <li>
+                <a class="btn--nav--secondary" href="#"><i class="bi bi-kanban nav-secondary-icon"></i>Tablero <i class="bi bi-chevron-down"></i></a
+                ></i>
+              </li>
+              <li><h2>Trello Clon</h2></li>
+              <li><a class="btn--nav--secondary" href="#"><i class="bi bi-star"></i></a></li>
+              <li><a class="btn--nav--secondary" href="#">Mox It</a></li>
+              <li>
+                <a class="btn--nav--secondary" href="#"><i class="bi bi-people nav-secondary-icon"></i>Visible para el Espacio de trabajo</a
+                >
+              </li>
+            </div>
+            <span class="nav-user">IF</span>
+            <div class="nav-items--secondary">
+              <li><a class="btn--nav--secondary--white" href="#"><i class="bi bi-person-plus icon--black nav-secondary-icon"></i>Compartir</a></li>
+              <li><a class="btn--nav--secondary" href="#"><i class="bi bi-airplane nav-secondary-icon"></i>Power-Ups</a></li>
+              <li><a class="btn--nav--secondary" href="#"><i class="bi bi-lightning-charge-fill nav-secondary-icon"></i>Automatización</a></li>
+              <li><a class="btn--nav--secondary" href="#"><i class="bi bi-filter nav-secondary-icon"></i>Filtrar</a></li>
+              <li><a class="btn--nav--secondary" href="#"><i class="bi bi-three-dots nav-secondary-icon"></i>Mostrar Menú</a></li>
+            </div>
+          </nav>
+          <div class="listas-wraper">
+            <div class="listas">
+            </div>
+            <div>
+              <button class="btn__add-card" id="add-card" type="button"><i class="bi bi-plus"></i>
+                Añada una lista
+              </button>
+            </div>
+          </div>
         </div>
-        <span class="nav-user">IF</span>
-        <div class="nav-items--secondary">
-          <li><a class="btn--nav--secondary--white" href="#"><i class="bi bi-person-plus icon--black nav-secondary-icon"></i>Compartir</a></li>
-          <li><a class="btn--nav--secondary" href="#"><i class="bi bi-airplane nav-secondary-icon"></i>Power-Ups</a></li>
-          <li><a class="btn--nav--secondary" href="#"><i class="bi bi-lightning-charge-fill nav-secondary-icon"></i>Automatización</a></li>
-          <li><a class="btn--nav--secondary" href="#"><i class="bi bi-filter nav-secondary-icon"></i>Filtrar</a></li>
-          <li><a class="btn--nav--secondary" href="#"><i class="bi bi-three-dots nav-secondary-icon"></i>Mostrar Menú</a></li>
-        </div>
-
-      </nav>
-      <div class="card-container" id="card-container">
-        <div class="listas"></div>
-        <div>
-          <button class="btn__add-card" id="add-card" type="button"><i class="bi bi-plus"></i>
-            Añada una lista
-          </button>
-        </div>
+        
       </div>
     </main>
     <script src="js/nav-bar.js"></script>
     <script src="js/add-card.js"></script>
+    <script src="js/side-bar.js"></script>
   </body>
 </html>
