@@ -423,7 +423,7 @@ nav .logo.space{
  align-items:center;
  background:rgb(0, 128, 255);
  flex-wrap: wrap;
- position: fixed;
+ position: relative;
  top: 100px;
 }
 
@@ -438,9 +438,8 @@ nav .logo.space{
  justify-content: center;
  align-items:flex-start;
  flex-wrap: nowrap;
-
-
 }
+
 .card{
     border-radius: .5rem;
     background: #fafafa;
